@@ -15,8 +15,8 @@ For each model type, we specify an estimation grid over the full evaluation samp
 1.) [`Conjugate BVARs`](!fcst_conjVAR.R): The hyperparameters can be treated as unknown and sampled based on an additional inverse transform sampling step, or a-priori chosen with an optimization algorithm (which maximizes the marginal likelihood). Three of the four conjugate variants can be estimated with this function:   
 
   * A conjugate VAR with a non-informative prior (our benchmark) with the option *model == "conjVAR-FLAT"*.
-  * A classic symmetric conjugate Minnesota prior with the options *model == "conjVAR-MINg" (grid for hyperparameters) or *model == “conjVAR-MINo"* (optimization algorithm for hyperparameters).
-  * An asymmetric conjugate Minnesota prior with the options *model == "conjVAR-ASYMg" (grid for hyperparameters) or model == "conjVAR-ASYMo" (optimization algorithm for hyperparameters).
+  * A classic symmetric conjugate Minnesota prior with the options *model == "conjVAR-MINg"* (grid for hyperparameters) or *model == “conjVAR-MINo"* (optimization algorithm for hyperparameters).
+  * An asymmetric conjugate Minnesota prior with the options *model == "conjVAR-ASYMg"* (grid for hyperparameters) or *model == "conjVAR-ASYMo"* (optimization algorithm for hyperparameters).
 
 2.) [`A conjugate BVAR with a subspace shrinkage prior`](!!fcst_subVAR.R): This is the fourth variant of the conjugate models. The hyperparameters related to the subspace shrinkage prior are treated as unknown and sampled based on an additional inverse transform sampling step.
 
