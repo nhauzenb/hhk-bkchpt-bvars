@@ -22,6 +22,12 @@ For each model type, we specify an estimation grid over the full evaluation samp
 
 3.) [`Non-conjugate BVAR`](!fcst_nconjVAR.R): All four non-conjugate variants can be estimated with this function. We use different variants of the global-local shrinkage priors. We consider an adaptive Minnesota prior (*model == "nconjVAR-MINh"*), a Horseshoe prior (*model == "nconjVAR-HS"*), a LASSO prior (*model == "nconjVAR-lasso"*), and a Normal-Gamma prior (*model == "nconjVAR-NG"*). All non-conjugate VARs are estimated using the Gibbs sampling algorithm proposed in [Chan et al. (2022, JoE)](https://doi.org/10.1016/j.jeconom.2021.11.010). Models can be estimated either with homoskedastic errors (*sv == "homo"*) or with stochastic volatility (*sv == "SV").
 
+The folder [`bvar funcs`](./bvar_funcs/) contains the MCMC samplers for each conjugate and non-conjugate variant: 
+
+* [`Direct sampler for conjugate BVAR with classic symmetric Minnesota prior`](./bvar_funcs/conjVARstd_func.R) 
+* [`Direct sampler for BVAR with an asymmetric conjugate Minnesota prior`](./bvar_funcs/conjVARasym_func.R)
+* [`Direct sampler for conjugate BVAR with a subspace shrinkage prior`](./bvar_funcs/conjVARsub_func.R)
+* [`Gibbs sampler for non-conjugate BVAR with global-local shrinkage priors`](./bvar_funcs/nconjVAR_func.R)
 
 
-
+Replication codes come without technical support of any kind.
