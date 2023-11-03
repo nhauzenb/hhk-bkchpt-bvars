@@ -8,9 +8,11 @@ For the forecast exercise, we use the popular FRED-QD dataset provided by the [*
 ### Data. 
 For each model type, we specify an estimation grid over the full evaluation sample and the information sets. In terms of model specifications, we consider four conjugate and four non-conjugate VAR priors. Detailed information on how we estimate these different models is provided below. There are three main estimation/forecasting files: 
 
-* One for conjugate BVARs: [!fcst_conjVAR.R](!fcst_conjVAR.R). 
-* One for conjugate BVARs with subspace shrinkage (!fcst_subVAR.R), and
-* One for non-conjugate BVARs (!fcst_nconjVAR.R).
+
+
+* [`!fcst_conjVAR`](!fcst_conjVAR.R) for conjugate BVARs: [!fcst_conjVAR.R](),  
+* [`!fcst_conjVAR`](!fcst_conjVAR.R) for conjugate BVARs with subspace shrinkage (!fcst_subVAR.R), and
+* [`!fcst_conjVAR`](!fcst_conjVAR.R) for non-conjugate BVARs (!fcst_nconjVAR.R).
 
 
 
