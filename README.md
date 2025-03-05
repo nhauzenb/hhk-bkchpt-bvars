@@ -1,8 +1,8 @@
 Code package for Hauzenberger, N., F. Huber, & G. Koop (2024). Macroeconomic forecasting using BVARs. Chapter for *Handbook of Research Methods and Applications in Macroeconomic Forecasting*, edited by Mike Clements and Ana Galvão.
 
-**Publication ([Book chapter](https://doi.org/10.4337/9781035310050.00006)).** 
+**[Book chapter](https://doi.org/10.4337/9781035310050.00006).** 
 
-**Publication ([Draft chapter](https://www.dropbox.com/scl/fi/cry8xuxkwwdtc3matz8g1/HHK_bookchp.pdf?rlkey=45ysy3b2hpqykkxormms9bipe&dl=0)).** 
+**[Draft chapter](https://www.dropbox.com/scl/fi/cry8xuxkwwdtc3matz8g1/HHK_bookchp.pdf?rlkey=45ysy3b2hpqykkxormms9bipe&dl=0).** 
 
 ### Data. 
 For the forecast exercise, we use the popular FRED-QD dataset provided by the [*Federal Reserve Bank of St. Louis*](https://research.stlouisfed.org/econ/mccracken/fred-databases/). We provide the data as a .rda file [`fred QD`](./fred_data/fred_QD.rda) with 30 columns of the *"Xraw.stat"* object referring to the different variables. This quarterly sample spans from 1965Q1 to 2019Q4. We deliberately exclude the Covid-19 period and focus exclusively on pre-pandemic data. The data is transformed to stationarity, following the suggestions of McCracken and Ng (2020). Table 1 in Sub-section 4.1 of the book chapter shows the set of variables included for different model sizes.
