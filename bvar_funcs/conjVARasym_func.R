@@ -451,7 +451,7 @@ for (mm in 1:M){
   S_po.mm     <- po.mm_draw[["S_po.mm"]]
   h.mm <- 1/rgamma(1, s_po.mm,S_po.mm)
   H_draw[mm] <- h.mm
-  h.mm <- (diag(SIG.ols)^2)[mm]
+  #h.mm <- (diag(SIG.ols)^2)[mm]
 ###------------------------------ Step 3: -----------------------------------###
 ###---- Draw equation-specific coefficients and covariances ----###
 ###-------  from the conditional posterior (a_m,l_m)|sigma2_m,DATA ----------###
